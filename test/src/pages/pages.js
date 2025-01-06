@@ -8,7 +8,7 @@ import Toggle from "./Toggle";
 const PageName = ({ PageName }) => {
    return (
       <li>
-         <p>{PageName.site}</p>
+         <p className="Num">{PageName.site}</p>
          <p>{PageName.name}</p>
       </li>
    )
@@ -26,7 +26,7 @@ const Pages = () => {
 
    return (
       <div>
-         <ul>
+         <ul className="Pagename-list">
             {ppList.map(ppList => <PageName PageName={ppList} />)}
          </ul>
 
