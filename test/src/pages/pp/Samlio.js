@@ -6,11 +6,19 @@ import Toggle from "../Toggle";
 
 const Samlio = () => {
    return (
-      <nav>
-         <ul>
-            <li><Link to="/"></Link></li>
-         </ul>
-      </nav>
+      <div>
+         <nav>
+            <ul>
+               <li><Link to="./Design">Design</Link></li>
+               <li><Link to="./Toggle">Toggle</Link></li>
+            </ul>
+         </nav>
+         <Routes>
+            <Route path="./Design" element={<Design />} />
+            <Route path="./Toggle" element={<Toggle />} />
+         </Routes>
+
+      </div>
    )
 
 }

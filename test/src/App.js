@@ -22,6 +22,15 @@ function App() {
           <li><Link to="/Elementary" > 진교초등학교 </Link> </li>
           <li><Link to="/Ikea" > 이케아 </Link> </li>
         </ul>
+        <Routes>
+        <Route path="/" element={<Pages />} />
+        <Route path="/Samlio" element={<Samlio />} />
+        <Route path="/Kntoo" element={<Kntoo />} />
+        <Route path="/Pledis" element={<Pledis />} />
+        <Route path="/Burgerking" element={<Burgerking />} />
+        <Route path="/Elementary" element={<Elementary />} />
+        <Route path="/Ikea" element={<Ikea />} />
+      </Routes>
       </nav>
     </div>
 
