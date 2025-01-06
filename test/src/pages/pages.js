@@ -8,8 +8,11 @@ import Toggle from "./Toggle";
 const PageName = ({ PageName }) => {
    return (
       <li>
-         <p className="Num">{PageName.site}</p>
-         <p>{PageName.name}</p>
+         <div>
+            <p className="Num">{PageName.site}</p>
+            <p>{PageName.name}</p>
+         </div>
+         {/* <Link to={Design} /> */}
       </li>
    )
 }

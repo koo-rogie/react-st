@@ -4,5 +4,29 @@
 
 .Pagename-list {
    display: flex;
-   
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.Pagename-list>li {
+   width: 30%;
+   border-radius: 10px;
+   box-shadow: 2px 1px 3px 0px #0000003b;
+   padding: 10px;
+   transition: 0.2s;
+}
+
+.Pagename-list>li:hover {
+   background-color: black;
+   color: #fff;
+}
+
+.Pagename-list>li:nth-child(2n) .Num {
+   color: pink;
+}
+
+.Pagename-list>li:nth-child(2n+1) .Num {
+   color: skyblue;
 }
